@@ -1,7 +1,5 @@
 #include "FileHandler.h"
-#include <ctime>
-#include <iostream>
-#include <sst>
+
 //write records to file
 double FileHandler::writeRecords()
 {
