@@ -223,7 +223,7 @@ string FileHandler::generateRandomString(int length)
 	string randomString(s);
 	return randomString;
 }
-
+branch new feature
 string FileHandler::generateRandomNumber(int length)
 {
 	char *s = new char[length+1]; 
