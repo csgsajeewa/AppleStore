@@ -68,7 +68,13 @@ double FileHandler::readRecords()
 //get file with particular offset
 PersonnalDetails* FileHandler::getSpecificRecord(int offset)
 {
-	
+	ifstream inFile("C:\\Users\\chamaths\\Desktop\\data.bin", ios::in | ios::binary);
+	PersonnalDetails* record;
+	if(inFile.is_open()){
+		record = new PersonnalDetails();
+		inFile.seekg(offset*sizeof(PersonnalDetails) ,ios::beg);		
+		inFile.read((char*)(record), sizeof(PersonnalDetails));
+	}
 	else
 	{
 		record = NULL;
