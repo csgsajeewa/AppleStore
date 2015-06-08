@@ -25,6 +25,7 @@ enum FieldName
 class FileHandler
 {
 public:
+		void show();
         FileHandler(string fileName, int numberOfRecords):m_fileName(fileName), m_numberOfRecords(numberOfRecords){}
         double writeRecords(); //
         double readRecords(); //
