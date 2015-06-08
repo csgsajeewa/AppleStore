@@ -81,17 +81,6 @@ double FileHandler::readRecords()
         return executionTime;
 }
 
-//get file with particular offset
-PersonnalDetails* FileHandler::getSpecificRecord(int offset)
-{
-	
-	else
-	{
-		record = NULL;
-	}
-	return record;
-}
-
 //create the index
 void FileHandler::createIndex(FieldName fieldName)
 {
@@ -184,26 +173,7 @@ void FileHandler::createIndex(FieldName fieldName)
 			       
 }
 
-//search for given value
-void FileHandler::search(FieldName fieldName, string value)
-{
-	
-	ifstream file;
-	file.open(getIndexFileName(fieldName));
-	string inputLine;
-	bool matched = false;
 
-	if(file.is_open())
-	{
-		//read each line of input line
-		while (std::getline(file,inputLine)) 
-		{
-			 //create stream from  each line
-			 istringstream stream(inputLine);
-			 string token;
-			 PersonnalDetails* p;
-			 //tokenize the line using white spaces		
-			 while(std::getline(stream, token, ' '))
 			 {
 				 if(matched)
 				 {
