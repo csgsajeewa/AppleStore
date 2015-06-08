@@ -237,53 +237,5 @@ string FileHandler::generateRandomNumber(int length)
 	return randomString;
 }
 
-string FileHandler::generateRandomEmailAddress(int length)
-{
-	string eMailAddress = generateRandomString(length)+"@"+generateRandomString(4)+".com";
-	return eMailAddress;
-}
 
-char* FileHandler::getIndexFileName (FieldName fieldName)
-{	
-	char* fileName;
-	switch(fieldName)
-	{
-		case firstName:
-			fileName = "C:\\Users\\chamaths\\Desktop\\Index\\firstNameIndex.txt";
-			break;
-		case middleName:
-			fileName = "C:\\Users\\chamaths\\Desktop\\Index\\middleNameIndex.txt";
-			break;
-		case lastName:
-			fileName = "C:\\Users\\chamaths\\Desktop\\Index\\lastNameIndex.txt";
-			break;
-		case address:
-			fileName = "C:\\Users\\chamaths\\Desktop\\Index\\addressIndex.txt";
-			break;
-		case telephoneNumber:
-			fileName = "C:\\Users\\chamaths\\Desktop\\Index\\telephoneNumberIndex.txt";
-			break;
-		case emailAddress:
-			fileName = "C:\\Users\\chamaths\\Desktop\\Index\\emailAddressIndex.txt";
-			break;
-		case NICnumber:
-			fileName = "C:\\Users\\chamaths\\Desktop\\Index\\NICnumberIndex.txt";
-			break;
-		case primarySchool:
-			fileName = "C:\\Users\\chamaths\\Desktop\\Index\\primarySchoolIndex.txt";
-			break;
-		case secondarySchool:
-			fileName = "C:\\Users\\chamaths\\Desktop\\Index\\secondarySchoolIndex.txt";
-			break;
-		case teritarySchool:
-			fileName = "C:\\Users\\chamaths\\Desktop\\Index\\teritarySchoolIndex.txt";
-			break;
-		case workPlace:
-			fileName = "C:\\Users\\chamaths\\Desktop\\Index\\workPlaceIndex.txt";
-			break;
-		case dateOfBirth:
-			fileName = "C:\\Users\\chamaths\\Desktop\\Index\\dateOfBirthIndex.txt";
-			break;
-	}
-	return fileName;
-}
+
