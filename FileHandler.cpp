@@ -224,18 +224,6 @@ string FileHandler::generateRandomString(int length)
 	return randomString;
 }
 
-string FileHandler::generateRandomNumber(int length)
-{
-	char *s = new char[length+1]; 
-	static const char alphanum[] =
-        "0123456789";
-    for (int i = 0; i < length; ++i) {
-        s[i] = alphanum[rand() % (sizeof(alphanum) - 1)];
-    }
-    s[length] = 0;
-	string randomString(s);
-	return randomString;
-}
 
 string FileHandler::generateRandomEmailAddress(int length)
 {
