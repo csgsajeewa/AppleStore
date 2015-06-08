@@ -16,4 +16,5 @@ struct PersonnalDetails
         char teritarySchool[4];
         char workPlace[4];
 		char dateOfBirth[11];
+		char street[3];
 };
