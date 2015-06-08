@@ -228,6 +228,11 @@ void add()
 {
 	int c=10;
 }
+
+void add c(int a)
+{
+	int c = a;
+}
 string FileHandler::generateRandomEmailAddress(int length)
 {
 	string eMailAddress = generateRandomString(length)+"@"+generateRandomString(4)+".com";
