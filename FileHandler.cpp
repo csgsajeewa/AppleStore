@@ -60,7 +60,23 @@ double FileHandler::readRecords()
 		}
 		else
 			cout<<"File Error"<<endl;
-	
+		
+		for(int i=0; i<m_numberOfRecords; ++i)
+		{
+			cout<< "------------------------------------"<< i << endl;
+			cout<< (p+i)->firstName << endl;
+			cout<< (p+i)->middleName<< endl;
+			cout<< (p+i)->lastName << endl;
+			cout<< (p+i)->address << endl;
+			cout<< (p+i)->telephoneNumber << endl;
+			cout<< (p+i)->emailAddress<< endl;
+			cout<< (p+i)->primarySchool<< endl;
+			cout<< (p+i)->secondarySchool<< endl;
+			cout<< (p+i)->teritarySchool<< endl;
+			cout<< (p+i)->workPlace<< endl;
+			cout<< (p+i)->NICnumber<< endl;
+			cout<< (p+i)->dateOfBirth<< endl;
+		}
 		       
         return executionTime;
 }
