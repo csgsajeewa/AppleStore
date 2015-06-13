@@ -12,7 +12,8 @@ int main(int argc, char** argv)
        		
 		//create index for each field name
 		
-		
+		void add a(){
+		}
 
 		
 		//search by field name and value
