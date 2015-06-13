@@ -12,18 +12,7 @@ int main(int argc, char** argv)
        		
 		//create index for each field name
 		
-		/**
-		fileHandler -> createIndex(firstName);
-		fileHandler -> createIndex(middleName);
-		fileHandler -> createIndex(lastName);
-		fileHandler -> createIndex(address);
-		fileHandler -> createIndex(telephoneNumber);
-		fileHandler -> createIndex(NICnumber);
-		fileHandler -> createIndex(primarySchool);
-		fileHandler -> createIndex(secondarySchool);
-		fileHandler -> createIndex(teritarySchool);
-		fileHandler -> createIndex(workPlace);
-		fileHandler -> createIndex(dateOfBirth);
+		ndler -> createIndex(dateOfBirth);
 		*/
 
 		
