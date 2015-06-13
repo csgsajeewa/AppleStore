@@ -17,6 +17,8 @@ enum FieldName
 	NICnumber,
 
 };
+void add number (){
+}
 
 class FileHandler
 {
