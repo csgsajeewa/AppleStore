@@ -15,11 +15,7 @@ enum FieldName
 	telephoneNumber,
 	emailAddress,
 	NICnumber,
-	primarySchool,
-	secondarySchool,
-	teritarySchool,
-	workPlace,
-	dateOfBirth
+
 };
 
 class FileHandler
